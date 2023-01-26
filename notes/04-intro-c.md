@@ -84,3 +84,6 @@ int main() {
 2. compile the program to convert program from source to "executabale" or "binary"
 
 `$ gcc -o my_pgm.exe my_pgm.c`
+
+<img width="687" alt="unix" src="https://user-images.githubusercontent.com/65584733/214948810-c2cba9e6-8d20-41d7-b9ec-d57f1725b04b.png">
+
