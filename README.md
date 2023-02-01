@@ -9,9 +9,8 @@
 
 **repo directory tree**
 
-[lab01](./src/lab01/README.md)
-
-[lab02](./src/lab02/README.md)
+1.  [lab01](./sr /lab01/README.md)
+2.  [lab02](./src/lab02/README.md)
 
 **tree of repo**
 ```
