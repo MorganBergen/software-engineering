@@ -348,3 +348,53 @@ if (myVale5
 
 find all three digit numbers that are equal to the sum of the cube of their digits
 to the sum of the cude of each of their digits
+```
+
+## the `while` statement
+
+## the `for` statement
+
+## the `switch` statement
+
+## the `break` statement
+
+## notes
+
+```c
+#include <stdio.h>
+
+int main() {
+    int h, t, d;
+    // because we want to look at all the 100 digit numbers
+    for (int i = 100; i <= 999; i++) {
+        h = i / 100; // will give us the number of hundreds
+        t = (i - (h * 100)) / 10; // will give us the number of tens
+        d = (i - (h * 100 + t * 10)); // will give us the number of digits
+        if (i == (h * h * h + (t * t * t) + (d * d * d)) {
+
+        }
+    }
+```
+
+```c
+// %d the expression that will be printed will be an integer
+// the numerical value is i 
+printf("the value is %d", i);
+
+printf("the values are %d and %d ", i, k);
+
+%d is a placeholder
+printf("%d plus %d is equal to %d ");
+       [ ]     [ ]            [ ]
+```
+
+suppose you want to print all prime numbers between 1 to 100
+
+```c
+#include <stdio.h>
+
+int main() {
+
+
+}
+```
