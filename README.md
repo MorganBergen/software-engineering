@@ -11,4 +11,4 @@
 
 [lab01](./src/lab01/lab01.md)
 
-[lab02](./src/lab02/lab02.md)
+[lab02](./src/lab02/README.md)
