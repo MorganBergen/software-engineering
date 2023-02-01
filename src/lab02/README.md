@@ -62,4 +62,15 @@ unzip `provided_code.zip`
 
 `> gcc main.c`
 
+```
+❯ tree
+.
+├── isEven.c
+├── isEven.h
+├── isOdd.c
+├── isOdd.h
+├── main.c
+└── makefile
 
+1 directory, 6 files
+```
