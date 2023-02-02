@@ -6,6 +6,14 @@
 
 **jan 26 2023**
 
+**code**
+
+[0 armstrong number](./0-armstrong-number/main.c)
+[1 primes brute](./1-primes-brute/main.c)
+[2 primes efficient](./2-primes-efficient/main.c)
+[3 factorial](./3-factorial/main.c)
+[4 swap](./4-swap/main.c)
+
 **contents**
 
 1.  [learning objectives](#learning-objectives)
