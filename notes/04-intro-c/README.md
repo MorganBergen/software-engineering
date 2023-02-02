@@ -1,18 +1,18 @@
 # 04 intro to c
 
-**morgan bergen**
+software engineering
 
-**software engineering**
+morgan bergen
 
-**jan 26 2023**
+jan 26 2023
 
 **code**
 
-[0 armstrong number](./0-armstrong-number/main.c)
-[1 primes brute](./1-primes-brute/main.c)
-[2 primes efficient](./2-primes-efficient/main.c)
-[3 factorial](./3-factorial/main.c)
-[4 swap](./4-swap/main.c)
+1.  [armstrong number algorithm](./0-armstrong-number/main.c)
+2.  [primes brute algorithm](./1-primes-brute/main.c)
+3.  [primes efficient algorithm](./2-primes-efficient/main.c)
+4.  [factorial algorithm](./3-factorial/main.c)
+5.  [swap algorithm](./4-swap/main.c)
 
 **contents**
 
