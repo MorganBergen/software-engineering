@@ -13,6 +13,7 @@ jan 26 2023
 3.  [primes efficient algorithm](./2-primes-efficient/main.c)
 4.  [factorial algorithm](./3-factorial/main.c)
 5.  [swap algorithm](./4-swap/main.c)
+6.  [test](./5-test/main.c)
 
 **contents**
 
@@ -334,7 +335,7 @@ int x = 4;
 - `/` divide
 - `%` modulus (remainder)
 
-## the `if` statement
+## if statement
 
 - syntax if expression statement
 - if the expression is true (not zero), the statement is executed. if the expression is false, it is not executed
@@ -346,7 +347,7 @@ if (expression) {
 }
 ```
 
-## the `if`/`else` statement
+## if else statment
 
 - syntax if expression statement1; else statement2;
 - if the expression is true, statement1 will be executed, otherwise statement2 will be
@@ -357,52 +358,115 @@ if (myVale5
 find all three digit numbers that are equal to the sum of the cube of their digits
 to the sum of the cude of each of their digits
 ```
-
-## the `while` statement
-
-## the `for` statement
-
-## the `switch` statement
-
-## the `break` statement
-
-## notes
+## assignment operators
 
 ```c
-#include <stdio.h>
-
-int main() {
-    int h, t, d;
-    // because we want to look at all the 100 digit numbers
-    for (int i = 100; i <= 999; i++) {
-        h = i / 100; // will give us the number of hundreds
-        t = (i - (h * 100)) / 10; // will give us the number of tens
-        d = (i - (h * 100 + t * 10)); // will give us the number of digits
-        if (i == (h * h * h + (t * t * t) + (d * d * d)) {
-
-        }
-    }
+x = y;  // x is assigned the value of y
+x++;    // post increment x by 1
+++x;    // pre increment x by 1
+x--;    // post decrement x by 1
+--x;    // pre decrement x by 1
+x += y; // assign (x + y) to x
+x -= y; // assign (x - y) to x
+x *= y; // assign (x * y) to x
+x /= y; // assign (x / y) to x
+x %= y; // assign (x % y) to x
 ```
 
 ```c
-// %d the expression that will be printed will be an integer
-// the numerical value is i 
-printf("the value is %d", i);
-
-printf("the values are %d and %d ", i, k);
-
-%d is a placeholder
-printf("%d plus %d is equal to %d ");
-       [ ]     [ ]            [ ]
+int x = 5;
+int y;
+y = ++x;
+/* x == 6, y == 6 */
 ```
 
-suppose you want to print all prime numbers between 1 to 100
+**don't confuse = and ==! the compiler will warn "suggest parentheses**
 
 ```c
-#include <stdio.h>
+int x = 5;
+if (x == 6) { // false
+    /* ... */
+}
+/* x is still 5 */
+```
 
-int main() {
+```c
+int x = 5; 
+if (x = 6) { /* always true */
+    /* x is now 6 */
+}
+/* ... */
+```
 
+## while loop
 
+- syntax `while (condition) { statement; }`
+- the condition is evaluated, if it is true, the body of loop is executed
+
+```c
+while (condition) {
+    // code to be executed
 }
 ```
+
+## for loop
+
+- syntax `for (initialization; condition; increment) { statement; }`
+- the for loop will first perform the initialization. then as long as test is TRUE, it will executed statements.  after each execution, it will increment.
+
+```c
+for (int i = 0; i < 3; i++) {
+    printf("counter = %d\n", i);
+}
+```
+
+**the for loop is just shorthand for while loop structure**
+
+```c
+float pow(float x, uint exp) {
+    float result = 1.0;
+    int i;
+    while (i < exp) {
+        result = result * x; // same as result *= x;
+        i++;
+    }
+    return(result);
+}
+
+int main(int argc, char **argv) {
+    float p;
+    p = pow(10.0, 5);
+    printf("10^5 = %f\n", p);
+    return(0);
+}
+```
+
+**is the same as...**
+
+
+```
+float pow(float x, uint exp) {
+    float result = 1.0;
+    int i;
+    for (int i = 0; i < exp; i++) {
+        result = result * x; // same as result *= x;
+    }
+    return(result);
+} 
+
+int main(int argc, char **argv) {
+    float p;
+    p = pow(10.0, 5);
+    printf("p = %f\n", p);
+    return(0);
+}
+```
+
+## summary
+
+- learned how to write and compile a c program
+- learned what c libraries are
+- introduced the c variable types
+- introduced how to use if and if/else statements
+- introduced how to use the for and while statements
+- references [lewis girod, cens systems lab](http://www.cens.ioc.ee/projects/courses/programming/lectures/lecture1.pdf)
