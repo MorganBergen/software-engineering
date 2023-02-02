@@ -13,7 +13,7 @@
 2.  [lab02](./src/lab02/README.md)
 
 **tree of repo**
-```
+```zsh
 ❯ tree
 .
 ├── README.md
@@ -28,22 +28,30 @@
 │       ├── 0-armstrong-number
 │       │   ├── a
 │       │   └── main.c
-│       ├── 0-exercise
+│       ├── 1-primes-brute
 │       │   ├── a
 │       │   └── main.c
-│       ├── 1-exercise
+│       ├── 2-primes-efficient
 │       │   ├── a
 │       │   └── main.c
-│       ├── 2-exercise
+│       ├── 3-factorial
 │       │   ├── a
 │       │   └── main.c
-│       ├── 3-exercise
+│       ├── 4-swap
 │       │   ├── a
-│       │   ├── main.c
-│       │   └── temp.c
-│       ├── 4-exercise
 │       │   └── main.c
-│       └── README.md
+│       ├── 5-test
+│       │   ├── README.md
+│       │   └── test.pdf
+│       ├── README.md
+│       ├── a
+│       ├── arm.c
+│       ├── temp.c
+│       └── test
+│           ├── a
+│           ├── main.c
+│           ├── quiz.c
+│           └── x.c
 └── src
     ├── lab01
     │   ├── README.md
@@ -75,5 +83,5 @@
             │   └── makefile
             └── lab2_bergen.tar.gz
 
-20 directories, 39 files
+21 directories, 46 files
 ```
