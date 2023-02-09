@@ -6,6 +6,8 @@
 2.  [software life cycle](./notes/02-software-life-cycle/README.md)
 3.  [software development tools](./notes/03-software-development-tools/README.md)
 4.  [introduction to c](./notes/04-intro-c/README.md)
+5.  [arrays](./notes//05-arrays/README.md)
+6.  [introduction to c++](./notes/06-intro-c++/README.md)
 
 **repo directory tree**
 
