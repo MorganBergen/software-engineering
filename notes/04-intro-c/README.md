@@ -6,6 +6,8 @@ morgan bergen
 
 jan 26 2023
 
+[exercises](#exercises)
+
 **code**
 
 1.  [armstrong number algorithm](./0-armstrong-number/main.c)
@@ -470,3 +472,17 @@ int main(int argc, char **argv) {
 - introduced how to use if and if/else statements
 - introduced how to use the for and while statements
 - references [lewis girod, cens systems lab](http://www.cens.ioc.ee/projects/courses/programming/lectures/lecture1.pdf)
+
+## exercises
+
+1.  describe the behavior of the following program
+
+```c
+#include <stdio.h>
+
+int main() {
+    
+    int n;
+    
+    for (n = 7; n != 0; n--) {
+        printf("%d\n"`
