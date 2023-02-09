@@ -11,6 +11,7 @@
 
 1.  [lab01](./src/lab01/README.md)
 2.  [lab02](./src/lab02/README.md)
+3.  [lab03](./src/lab03/README.md)
 
 **tree of repo**
 ```zsh
@@ -24,34 +25,30 @@
 │   │   └── README.md
 │   ├── 03-software-development-tools
 │   │   └── README.md
-│   └── 04-intro-c
-│       ├── 0-armstrong-number
-│       │   ├── a
-│       │   └── main.c
-│       ├── 1-primes-brute
-│       │   ├── a
-│       │   └── main.c
-│       ├── 2-primes-efficient
-│       │   ├── a
-│       │   └── main.c
-│       ├── 3-factorial
-│       │   ├── a
-│       │   └── main.c
-│       ├── 4-swap
-│       │   ├── a
-│       │   └── main.c
-│       ├── 5-test
-│       │   ├── README.md
-│       │   └── test.pdf
+│   ├── 04-intro-c
+│   │   ├── 0-armstrong-number
+│   │   │   ├── a
+│   │   │   └── main.c
+│   │   ├── 1-primes-brute
+│   │   │   ├── a
+│   │   │   └── main.c
+│   │   ├── 2-primes-efficient
+│   │   │   ├── a
+│   │   │   └── main.c
+│   │   ├── 3-factorial
+│   │   │   ├── a
+│   │   │   └── main.c
+│   │   ├── 4-swap
+│   │   │   ├── a
+│   │   │   └── main.c
+│   │   ├── 5-test
+│   │   │   ├── README.md
+│   │   │   └── test.pdf
+│   │   └── README.md
+│   └── 05-arrays
 │       ├── README.md
 │       ├── a
-│       ├── arm.c
-│       ├── temp.c
-│       └── test
-│           ├── a
-│           ├── main.c
-│           ├── quiz.c
-│           └── x.c
+│       └── main.c
 └── src
     ├── lab01
     │   ├── README.md
@@ -60,28 +57,34 @@
     │       ├── hello-pgm
     │       ├── hello-pgm.c
     │       └── hello-pgm.exe
-    └── lab02
+    ├── lab02
+    │   ├── README.md
+    │   ├── assets
+    │   │   ├── make_tutorial-1.pdf
+    │   │   ├── provided_code
+    │   │   │   ├── isEven.c
+    │   │   │   ├── isEven.h
+    │   │   │   ├── isOdd.c
+    │   │   │   ├── isOdd.h
+    │   │   │   ├── main.c
+    │   │   │   └── makefile
+    │   │   ├── provided_code.zip
+    │   │   └── shell_commands_tutorial-1.pdf
+    │   └── src
+    │       ├── lab2_bergen
+    │       │   ├── isEven.c
+    │       │   ├── isEven.h
+    │       │   ├── isOdd.c
+    │       │   ├── isOdd.h
+    │       │   ├── main.c
+    │       │   └── makefile
+    │       └── lab2_bergen.tar.gz
+    └── lab03
         ├── README.md
-        ├── assets
-        │   ├── make_tutorial-1.pdf
-        │   ├── provided_code
-        │   │   ├── isEven.c
-        │   │   ├── isEven.h
-        │   │   ├── isOdd.c
-        │   │   ├── isOdd.h
-        │   │   ├── main.c
-        │   │   └── makefile
-        │   ├── provided_code.zip
-        │   └── shell_commands_tutorial-1.pdf
-        └── src
-            ├── lab2_bergen
-            │   ├── isEven.c
-            │   ├── isEven.h
-            │   ├── isOdd.c
-            │   ├── isOdd.h
-            │   ├── main.c
-            │   └── makefile
-            └── lab2_bergen.tar.gz
+        └── assets
+            ├── Lab3_Instructions.pdf
+            ├── Problem1_Description.pdf
+            └── Problem2_Description.pdf
 
-21 directories, 46 files
+23 directories, 46 files
 ```
