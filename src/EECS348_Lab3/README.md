@@ -42,7 +42,7 @@ given 12 monthly sales numbers in an input file.  using functions, generate a ta
 
 ### sample input
 
-```zsh
+```txt
 23458.01
 40112.00
 56011.85
@@ -59,7 +59,7 @@ given 12 monthly sales numbers in an input file.  using functions, generate a ta
 
 ### sample output
 
-```zsh
+```txt
 Monthly sales report for 2022:
 
 Month       Sales
@@ -82,13 +82,10 @@ Maximum sales:  $95225.22 (December)
 Average sales:  $57979.86
 
 Six-Month Moving Average Report:
-January
-February March April May June
-- June
-- July
-- August
-- September - October
-- November - December
-$42584.61 $50741.66 $53424.80 $55294.64 $60363.34 $67537.62 $73375.12
-July
-
+January     -   June        $42584.61
+February    -   July        $50741.66
+March       -   August      $53424.80
+April       -   September   $55294.64
+May         -   October     $60363.34
+June        -   November    $67537.62
+July        -   December    $
