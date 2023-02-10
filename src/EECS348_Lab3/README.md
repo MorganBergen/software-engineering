@@ -88,4 +88,20 @@ March       -   August      $53424.80
 April       -   September   $55294.64
 May         -   October     $60363.34
 June        -   November    $67537.62
-July        -   December    $
+July        -   December    $73375.12
+
+Sales Report (Highest to Lowest):
+Month           Sales
+December        $95225.22
+November        $80950.34
+July            $72400.31
+October         $68233.12
+September       $67230.84
+June            $60200.22
+August          $56210.89
+March           $56011.85
+February        $40112.00
+May             $37904.67
+April           $37820.88
+January         $23458.01
+```
