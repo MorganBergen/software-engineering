@@ -13,7 +13,7 @@
 
 1.  [lab01](./src/lab01/README.md)
 2.  [lab02](./src/lab02/README.md)
-3.  [lab03](./src/EECS348_Lab3/README.md)
+3.  [lab03](./src/lab03/EECS348_Lab3/README.md)
 
 **tree of repo**
 ```zsh
