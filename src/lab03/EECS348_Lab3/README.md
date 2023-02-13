@@ -1,4 +1,4 @@
-## lab03 introduction to compiled programming, eclipse idd
+## lab03 introduction to compiled programming, eclipse ide
 
 software engineering 
 
