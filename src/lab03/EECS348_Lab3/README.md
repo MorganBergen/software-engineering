@@ -17,6 +17,7 @@ feb 8 2023
 -   [problem statement](#problem-statement0)
 -   [sample input](#sample-input0)
 -   [sample output](#sample-output0)
+-   [notes](#notes1)
 
 ## objective
 
