@@ -14,6 +14,9 @@ feb 8 2023
 -   [sample output](#sample-output)
 -   [notes](#notes0)
 4.  [programming problem #2 determining a football score possibilities](#programming-problem-#2-determining-a-football-score-possibilities)
+-   [problem statement](#problem-statement0)
+-   [sample input](#sample-input0)
+-   [sample output](#sample-output0)
 
 ## objective
 
@@ -129,4 +132,142 @@ int main() {
 ```
 if you want to `printf` of the array using the format specifier "%f" it will print a floating point value, and by default it will print the number with six digits after the decimal point.  so if you want to print a certain number of decimal places, you can specify the precision using the format specifier, `printf(`%.Xf`, xx[i]);`, where `X` is the number of decimal places you want to print.  for example to print only two decimal places you would use the format specififer `%.2f`
 
+## programming problem #2 determining a football score possibilities
 
+### problem statement
+
+given an integer representing a score in a national football league (nfl) game, write a program to determine all possible combinations of scoring plays that can result in that score.  the program should continue to prompt the user for a score until a value less than or equal to 1 is entered, at which point the program should terminate.  for each score entered, the program should display all possible combinations of scoring plays that result in that score.
+
+**a scoring plays in an nfl game**
+
+| scoring play                    | points |
+|:--------------------------------|:-------|
+| touchdown                       | 6      |
+| field goal                      | 3      |
+| safety                          | 2      |
+| touchdown + 2-point conversion  | 8      |
+| touch down + 1 point field goal | 7      |
+
+
+### sample input
+
+```txt
+Enter 0 or 1 to STOP
+Enter the NFL score: 25
+```
+
+### sample output
+
+```txt
+possible combinations of scoring plays:
+0 TD + 2pt, 0 TD + FG, 0 TD, 1 3pt FG, 11 Safety 
+0 TD + 2pt, 0 TD + FG, 0 TD, 3 3pt FG, 8 Safety 
+0 TD + 2pt, 0 TD + FG, 0 TD, 5 3pt FG, 5 Safety 
+0 TD + 2pt, 0 TD + FG, 0 TD, 7 3pt FG, 2 Safety 
+0 TD + 2pt, 0 TD + FG, 1 TD, 1 3pt FG, 8 Safety 
+0 TD + 2pt, 0 TD + FG, 1 TD, 3 3pt FG, 5 Safety 
+0 TD + 2pt, 0 TD + FG, 1 TD, 5 3pt FG, 2 Safety
+0 TD + 2pt, 0 TD + FG, 2 TD, 1 3pt FG, 5 Safety
+0 TD + 2pt, 0 TD + FG, 2 TD, 3 3pt FG, 2 Safety
+0 TD + 2pt, 0 TD + FG, 3 TD, 1 3pt FG, 2 Safety
+0 TD + 2pt, 1 TD + FG, 0 TD, 0 3pt FG, 9 Safety
+0 TD + 2pt, 1 TD + FG, 0 TD, 2 3pt FG, 6 Safety
+0 TD + 2pt, 1 TD + FG, 0 TD, 4 3pt FG, 3 Safety
+0 TD + 2pt, 1 TD + FG, 0 TD, 6 3pt FG, 0 Safety
+0 TD + 2pt, 1 TD + FG, 1 TD, 0 3pt FG, 6 Safety
+0 TD + 2pt, 1 TD + FG, 1 TD, 2 3pt FG, 3 Safety
+0 TD + 2pt, 1 TD + FG, 1 TD, 4 3pt FG, 0 Safety 
+0 TD + 2pt, 1 TD + FG, 2 TD, 0 3pt FG, 3 Safety
+0 TD + 2pt, 1 TD + FG, 2 TD, 2 3pt FG, 0 Safety
+0 TD + 2pt, 1 TD + FG, 3 TD, 0 3pt FG, 0 Safety
+0 TD + 2pt, 2 TD + FG, 0 TD, 1 3pt FG, 4 Safety
+0 TD + 2pt, 2 TD + FG, 0 TD, 3 3pt FG, 1 Safety 
+0 TD + 2pt, 2 TD + FG, 1 TD, 1 3pt FG, 1 Safety 
+0 TD + 2pt, 3 TD + FG, 0 TD, 0 3pt FG, 2 Safety 
+1 TD + 2pt, 0 TD + FG, 0 TD, 1 3pt FG, 7 Safety 
+1 TD + 2pt, 0 TD + FG, 0 TD, 3 3pt FG, 4 Safety 
+1 TD + 2pt, 0 TD + FG, 0 TD, 5 3pt FG, 1 Safety 
+1 TD + 2pt, 0 TD + FG, 1 TD, 1 3pt FG, 4 Safety 
+1 TD + 2pt, 0 TD + FG, 1 TD, 3 3pt FG, 1 Safety 
+1 TD + 2pt, 0 TD + FG, 2 TD, 1 3pt FG, 1 Safety 
+1 TD + 2pt, 1 TD + FG, 0 TD, 0 3pt FG, 5 Safety 
+1 TD + 2pt, 1 TD + FG, 0 TD, 2 3pt FG, 2 Safety
+1 TD + 2pt, 1 TD + FG, 1 TD, 0 3pt FG, 2 Safety
+1 TD + 2pt, 2 TD + FG, 0 TD, 1 3pt FG, 0 Safety
+2 TD + 2pt, 0 TD + FG, 0 TD, 1 3pt FG, 3 Safety
+2 TD + 2pt, 0 TD + FG, 0 TD, 3 3pt FG, 0 Safety
+2 TD + 2pt, 0 TD + FG, 1 TD, 1 3pt FG, 0 Safety
+2 TD + 2pt, 1 TD + FG, 0 TD, 0 3pt FG, 1 Safety
+```
+
+### notes
+
+my output in different order do to embedded for loop.  here is my thought process...  there is a possible permutation of values from the set of elements S = {`saf`, `fgo`, `td0`, `td`, `td2`} therefore i need to go through every value from 0-ceiling in order to loop to the next and determine if it meets the score value im looking for.
+
+every iteration will have an embedded one untill all possible values of `m` which is affiliated with `m * td2` has been trialed for equalling 25 with all other values at 0, in this case there are no possible combinations where
+
+`0 TD + 2pt, 1 TD + FG, 3 TD, 0 3pt FG, 0 Safety != 25`
+
+```c
+ int saf = 2;
+            int fgo = 3;
+            int td0 = 6;
+            int td1 = 7;
+            int td2 = 8;
+
+            for (int i = 0; i <= score; i++) {
+                for (int j = 0; j <= score; j++) {
+                    for (int k = 0; k <= score; k++) {
+                        for (int l = 0; l <= score; l++) {
+                            for (int m = 0; m <= score; m++) {
+                                if (i * saf + j * fgo + k * td0 + l * td1 + m * td2 == score) {
+                                    printf("%d TD + 2pt, %d TD + FG, %d TD, %d 3pt FG, %d Safety\n", m, l, k, j, i);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
+```
+Enter the NFL score: 25
+0 TD + 2pt, 1 TD + FG, 3 TD, 0 3pt FG, 0 Safety
+1 TD + 2pt, 2 TD + FG, 0 TD, 1 3pt FG, 0 Safety
+2 TD + 2pt, 0 TD + FG, 1 TD, 1 3pt FG, 0 Safety
+0 TD + 2pt, 1 TD + FG, 2 TD, 2 3pt FG, 0 Safety
+2 TD + 2pt, 0 TD + FG, 0 TD, 3 3pt FG, 0 Safety
+0 TD + 2pt, 1 TD + FG, 1 TD, 4 3pt FG, 0 Safety
+0 TD + 2pt, 1 TD + FG, 0 TD, 6 3pt FG, 0 Safety
+2 TD + 2pt, 1 TD + FG, 0 TD, 0 3pt FG, 1 Safety
+0 TD + 2pt, 2 TD + FG, 1 TD, 1 3pt FG, 1 Safety
+1 TD + 2pt, 0 TD + FG, 2 TD, 1 3pt FG, 1 Safety
+0 TD + 2pt, 2 TD + FG, 0 TD, 3 3pt FG, 1 Safety
+1 TD + 2pt, 0 TD + FG, 1 TD, 3 3pt FG, 1 Safety
+1 TD + 2pt, 0 TD + FG, 0 TD, 5 3pt FG, 1 Safety
+0 TD + 2pt, 3 TD + FG, 0 TD, 0 3pt FG, 2 Safety
+1 TD + 2pt, 1 TD + FG, 1 TD, 0 3pt FG, 2 Safety
+0 TD + 2pt, 0 TD + FG, 3 TD, 1 3pt FG, 2 Safety
+1 TD + 2pt, 1 TD + FG, 0 TD, 2 3pt FG, 2 Safety
+0 TD + 2pt, 0 TD + FG, 2 TD, 3 3pt FG, 2 Safety
+0 TD + 2pt, 0 TD + FG, 1 TD, 5 3pt FG, 2 Safety
+0 TD + 2pt, 0 TD + FG, 0 TD, 7 3pt FG, 2 Safety
+0 TD + 2pt, 1 TD + FG, 2 TD, 0 3pt FG, 3 Safety
+2 TD + 2pt, 0 TD + FG, 0 TD, 1 3pt FG, 3 Safety
+0 TD + 2pt, 1 TD + FG, 1 TD, 2 3pt FG, 3 Safety
+0 TD + 2pt, 1 TD + FG, 0 TD, 4 3pt FG, 3 Safety
+0 TD + 2pt, 2 TD + FG, 0 TD, 1 3pt FG, 4 Safety
+1 TD + 2pt, 0 TD + FG, 1 TD, 1 3pt FG, 4 Safety
+1 TD + 2pt, 0 TD + FG, 0 TD, 3 3pt FG, 4 Safety
+1 TD + 2pt, 1 TD + FG, 0 TD, 0 3pt FG, 5 Safety
+0 TD + 2pt, 0 TD + FG, 2 TD, 1 3pt FG, 5 Safety
+0 TD + 2pt, 0 TD + FG, 1 TD, 3 3pt FG, 5 Safety
+0 TD + 2pt, 0 TD + FG, 0 TD, 5 3pt FG, 5 Safety
+0 TD + 2pt, 1 TD + FG, 1 TD, 0 3pt FG, 6 Safety
+0 TD + 2pt, 1 TD + FG, 0 TD, 2 3pt FG, 6 Safety
+1 TD + 2pt, 0 TD + FG, 0 TD, 1 3pt FG, 7 Safety
+0 TD + 2pt, 0 TD + FG, 1 TD, 1 3pt FG, 8 Safety
+0 TD + 2pt, 0 TD + FG, 0 TD, 3 3pt FG, 8 Safety
+0 TD + 2pt, 1 TD + FG, 0 TD, 0 3pt FG, 9 Safety
+0 TD + 2pt, 0 TD + FG, 0 TD, 1 3pt FG, 11 Safety
+```
