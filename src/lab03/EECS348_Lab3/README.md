@@ -62,7 +62,6 @@ given 12 monthly sales numbers in an input file.  using functions, generate a ta
 
 ```txt
 Monthly sales report for 2022:
-
 Month       Sales
 January     $23458.01
 February    $40112.00  

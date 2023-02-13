@@ -2,7 +2,6 @@
 #include <math.h>
 
 double average(double array[], int start, int end);
-double compare(const void *a, const void *b);
 
 int main() {
     
