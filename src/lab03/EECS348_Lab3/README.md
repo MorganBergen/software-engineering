@@ -210,7 +210,7 @@ every iteration will have an embedded one untill all possible values of `m` whic
 `0 TD + 2pt, 0 TD + FG, 1 TD, 0 3pt FG, 0 Safety != 25` so the first loop will do nothing and keep iterating by incrementing `m++` untill its less than or equal to 25, however there are no integer values that allows for `8 * m = 25` so we try again for a different combinating by encorporating the next highest value for the superior for-loop.  and we keep doing this until all possible values get checked.
 
 ```c
- int saf = 2;
+            int saf = 2;
             int fgo = 3;
             int td0 = 6;
             int td1 = 7;
