@@ -12,6 +12,7 @@ feb 8 2023
 -   [problem statement](#problem-statement)
 -   [sample input](#sample-input)
 -   [sample output](#sample-output)
+-   [notes](#notes0)
 4.  [programming problem #2 determining a football score possibilities](#programming-problem-#2-determining-a-football-score-possibilities)
 
 ## objective
@@ -64,7 +65,7 @@ Monthly sales report for 2022:
 
 Month       Sales
 January     $23458.01
-February    $40112.00
+February    $40112.00  
 March       $56011.85
 April       $37820.88
 May         $37904.67
@@ -105,3 +106,28 @@ May             $37904.67
 April           $37820.88
 January         $23458.01
 ```
+
+### notes
+
+```c
+#include <stdio.h>
+
+int main() {
+
+    char stats[255] = "3.14";
+    printf("%s", stats);
+
+    double xx[12] = {23458.01, 40112.00, 56011.85, 37820.88, 37904.67, 60200.22, 72400.31, 56210.89, 67230.84, 68233.12, 80950.34, 95225.22};
+
+
+    for (int i = 0; i < 10; i++) {
+        printf("%f\n", xx[i]);
+        printf("%.2f\n", xx[i]);
+    }
+
+    return(0);
+}
+```
+if you want to `printf` of the array using the format specifier "%f" it will print a floating point value, and by default it will print the number with six digits after the decimal point.  so if you want to print a certain number of decimal places, you can specify the precision using the format specifier, `printf(`%.Xf`, xx[i]);`, where `X` is the number of decimal places you want to print.  for example to print only two decimal places you would use the format specififer `%.2f`
+
+

@@ -22,19 +22,22 @@ int main() {
 
     printf("Monthly sales report for 2022:\n");
     printf("Month\t\tSales\n");
-
-    // 
-
+    
+    int i = 0;
     while (fscanf(fp, "%s", stats) == 1) {
         printf("%s\t$%s", months[count], stats);
+        // sales[i] = strtod(stats, NULL);
+        // sales[i] = stats;
         printf("\n");
         count++;
+        i++;
     } if (feof(fp)) {
     } else {
         printf("Error unable to read file");
     }
     printf("\nSales summary:\n");
-    
+
+
     int length = sizeof(stats)/sizeof(stats[0]);
     int max_value = stats[0];
 
@@ -48,7 +51,7 @@ int main() {
 
     printf("\nSales Report (Highest to Lowest):\n");
     printf("%d", max_value);
-
+    
 
     fclose(fp);
 
