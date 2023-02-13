@@ -204,9 +204,9 @@ possible combinations of scoring plays:
 
 my output in different order do to embedded for loop.  here is my thought process...  there is a possible permutation of values from the set of elements S = {`saf`, `fgo`, `td0`, `td`, `td2`} therefore i need to go through every value from 0-ceiling in order to loop to the next and determine if it meets the score value im looking for.
 
-every iteration will have an embedded one untill all possible values of `m` which is affiliated with `m * td2` has been trialed for equalling 25 with all other values at 0, in this case there are no possible combinations where
+every iteration will have an embedded one untill all possible values of `m` which is affiliated with `m * td2` has been trialed for equalling 25 with all other values at 0, in this case there are no possible combinations thus, 
 
-`0 TD + 2pt, 1 TD + FG, 3 TD, 0 3pt FG, 0 Safety != 25`
+`0 TD + 2pt, 0 TD + FG, 1 TD, 0 3pt FG, 0 Safety != 25` so the first loop will do nothing and keep iterating by incrementing `m++` untill its less than or equal to 25, however there are no integer values that allows for `8 * m = 25` so we try again for a different combinating by encorporating the next highest value for the superior for-loop.  and we keep doing this until all possible values get checked.
 
 ```c
  int saf = 2;
@@ -230,6 +230,8 @@ every iteration will have an embedded one untill all possible values of `m` whic
             }
         }
 ```
+
+**my output**
 ```
 Enter the NFL score: 25
 0 TD + 2pt, 1 TD + FG, 3 TD, 0 3pt FG, 0 Safety
