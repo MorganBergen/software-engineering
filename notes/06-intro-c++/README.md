@@ -50,8 +50,11 @@
 46. [data types in c++](#data-types-in-c)
 47. [object-orientation in c++](#object-orientation-in-c)
 48. [class and object definitions](#class-and-object-definitions)
-49. [classes vs objects](#classes-vs-objects)
-50. [defining a class](#defining-a-class)
+49. [public and private members](public-and-private-members)
+50. [initializing class objects](initializing-class-objects)
+
+## 
+
 
 ## review
 
@@ -247,6 +250,10 @@ Ritchie at Bell Laboratories
 
 ## function overloading
 
+- c++ enables several functions of the same name to be defined, as long as they have different signatures
+- the c++ compiler selects the proper function to call by examining the number, types, and order of the arguments in the call
+- function overloading is used to create several functions of the same name that perform similar tasks, but on different data types
+
 ## function templates
 
 -  if the program logic and operator are identifical for each data type, overloading may be performed more compactly and convently by using function templates
@@ -272,6 +279,7 @@ Ritchie at Bell Laboratories
 short x = 1;
 int y = x;		// OK
 short z = y;	// NO
+```
 
 ## object-orientation in c++
 
@@ -320,10 +328,55 @@ Box b2;
 Box b3;
 ```
 
-## classes vs objects
+## public and private members
 
-## defining a class
+**member access specifiers**
 
+-  classes can be limit the access to their member functions and data
+-  the three types of access a class can grant
+-  `public` accessible wherever the program has access to an object of the class
+-  `private` accessibe only to member functions of the class
+-  `protected` similar to private; discussed later
+
+## the constructor and destructor methods
+
+1.  the constructor function
+
+-  a special member function that initializes the data members of a class object
+-  cannot return values
+-  the same name as the class
+
+2.  the destructor function
+
+-  a special function with the same name as the class but preceded with a tilde character `~`
+-  cannot take arguments and cannot be overloaded
+-  performs termination housekeeping
+
+## accessing class members
+
+-  `.` for objects
+-  `->` for pointers
+-  assume an object `t`
+
+```
+t.hour
+t.printMilitary();
+```
+
+## initializing class objects
+
+-  constructors
+	- initialize class members
+	- same name as the class 
+	- no return type
+	- member variables can be initialized by the constructor or set afterward
+
+-  passing arguments to a constructor
+	-  when an object of a class is declared; initializers can be provided
+	- format of declaration with initializers
+	- default arguments may also be specified in the constructor prototype
+	
+`class-type objectname(datat-type value1, data-type value2);`
 
 
 
