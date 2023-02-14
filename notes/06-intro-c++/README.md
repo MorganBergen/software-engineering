@@ -140,11 +140,46 @@ Ritchie at Bell Laboratories
 
 ## c++ syntax
 
+-  `//` indicates a comment; and extends to the end of the line
+-  can still use `/*...*/` combination
+-  a `#` directive is a message to the preprocessor
+-  `#include <iostream>` is for i/o
+-  like C, white spaces are ignored
+-  `main()` function is part fo every C++ 
+-  c++ programs being executed at function `main()`
+-  the rest of the program consists of classes and functions
+-  typically, output and input in c++ are accomplished with streams and characters
+-  when a `cout` statement executed, it sends a stream of characters to the standard output stream object `std::cout` which is normally connected to the screen
+-  the names `cin` (the standard input stream) and `cerr` (the standard error stream) also belong to namespace `std`
+
+`std::cout << "string literal output\n";`
+
+-  the `<<` operator is referred to as the stream insertion operator
+-  the value to the operator's right is inserted in the output stream
+-  the escape sequence `\n` means new line character and causes the cursor to move to the beginning of the next line on the screen
+-  using multiple stream insertion operators `<<` in a single statement is referred to as concatenating, chaining, or cascading stream insertion operators
+
 ## escape sequences
+
+-  `\n` newline
+-  `\t` horizontal tab
+-  `\r` carriage return
+-  `\a` alert
+-  `\\` backslash character
+-  `\'` single quote
+-  `\"` double quote 
 
 ## return statements
 
+-  when the `return` statement is used at the end of main the value 0 indicates that the program has terminated successfully
+-  according to the c++ standard, if program execution reaches the end of main without encountering a return statement, it's assumed that the program terminated successfully
+
 ## variable declarations, definitions like c
+
+-  fundamental types are like c and are all lowercase
+-  `short`, `int`, `long`, `double`, `char`
+-  identifiers (variables, function names,...) also like c
+-  assignment operators also like in c:  `+`, `-`, `*`, `/`, `%`
 
 ## relational operators
 
@@ -214,12 +249,90 @@ Ritchie at Bell Laboratories
 
 ## function templates
 
+-  if the program logic and operator are identifical for each data type, overloading may be performed more compactly and convently by using function templates
+-  you write a single function template definition
+- all function template definitions begin with the `template` keyword followed by a template parameter list to the function template enclosed in angle brackets `<` and `>`
+
 ## data types in c++
+
+1.  `char` - unsigned char, 8-bit integer
+2.  `short` unsigned short - 16-bit integer
+3.  `int` - unsiged int - 32-bit integer
+4.  `long` - unsigned long - 64-bit integer
+5.  `bool` - n/a - true or false
+6.  `float` - 32-bit floating point
+7.  `double` - 64-bit floating point
+8.  `long long` - 128-bit integer
+
+**type casting**
+
+- c++ is stringly typed; it will auto-convert a variable of one type to another in a limited fashion (wont change the value)
+
+```cpp
+short x = 1;
+int y = x;		// OK
+short z = y;	// NO
 
 ## object-orientation in c++
 
+**classes**
+
+-  defines a set of data items and structures (data members)
+-  defines a set of operations (operation members)
+-  also called methods (functions)
+-  also called services
+-  also called class behavior
+-  encapsulates the two
+-  indicates which of the above members are accessible (`public`) and which are inacccessible (`private`)
+	- use of access specifier:  `public`, `private`, `protected`
+-  class defines an abstract data type
+-  examples:  `course`, `student`, `teacher`, `book`, `account`, `printer`
+
+**add UML - Unified modeling language**
+
+```cpp
+class Student {
+	public:
+		int getAge();
+		std::string getName();
+	private:
+		int myAge;
+		std::string myName();
+}
+```
+
 ## class and object definitions
+
+**class**
+```cpp
+class Box {
+	private:
+		// data members
+	public:
+		// member functions
+};
+```
+
+**objects**
+```
+Box b1;
+Box b2;
+Box b3;
+```
 
 ## classes vs objects
 
 ## defining a class
+
+
+
+
+
+
+
+
+
+
+
+
+
