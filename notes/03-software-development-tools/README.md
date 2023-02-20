@@ -85,15 +85,138 @@ linux default shell, most linux systems default to the bash shell.  once you lea
 -  create a text file
 -  include in the first line `#!/bin/bash`
 -  write scripts that do different tasks
-    - a shell script
+    -  a shell script:  a text file that contains a sequence of commands
+    -  command sequences in which a user has a need to use repeatedly in order to save time
+    -  shell scripts contain ascii text and are written using a text editor
+    -  automating the code compiling process
+    -  executing routine backups
+    -  personal example:  compiling LaTeX files
+-  what can be included in a shell script
+    -  shell commands
+    -  assignment statement
+    -  loop statements (while, for)
+    -  if statement
+    -  system calls
+    -  ...
+-  some special symbols also have their own meanings
+    - `#`, `%`, `$`, `|`, `[]`, `...`
 
 ##  a simple shell script
+
+the following script has a while statement that will,
+-  iterate 5 times
+-  the value of count variable will increment by 1 in each step
+-  when the value of count variable will be 5 the while loop will terminate
+
+```bash
+#!/bin/bash
+valid=true
+while [ $valid ]
+do
+echo $count
+if [ $count -eq 5 ];
+then
+break
+fi
+((count++))
+done
+```
+
 ##  summary
+
+-  it is a command line interpreter (cli)
+-  unix/linux affectionate love the (cli)
+    -  it is very powerful and provides a lot of control
+    -  it is simple (there is an initial learning curve)
+    -  nevertheless, many giu interfaces too (most linux sys admins and power uses do not use gui)
+-  you most likely will learn a lot more in an OS course
+-  for now, you need to learn the purpose and the very basics of shell scripting
+
 ##  software development ides
+
+-  integrated development enviroments (ides) are software packages that provide comprehensive support for coding, testing, and debugging
+-  the components of an ide are
+    -  editor
+    -  build support (link, compile)
+    -  execute
+    -  debug
+
 ##  features of an ide
+
+-  syntax highlighting and aid in editing (e.g. matching brackets)
+-  packing options (e.g. tar, zip archive)
+-  posting to an onlien repository (e.g. github)
+-  configurable build support (e.g. multiple programming languages)
+-  smart feedback
+-  coding templates
+-  documentation support / lookup:  `scp()`
+
 ##  examples of popular ide's
+
+-  microsoft visual studio
+-  eclipse
+-  aws cloud9
+-  android studio
+-  pycharm
+-  spyder
+
 ##  compiled programs vs interpreters
+
+1.  intrepretation
+
+-  performing the operations described by the source program
+-  an extremely simplistic view
+
+2.  compilation
+
+-  translation of a program written in a source language into a semantically equivalent program written in a target language
+-  an extremely simplistic view
+
 ##  simplified view of compilation
+
+1.  source code (.c, .cpp, .h) -> preprocessing step 1:  preprocessor (cpp)
+
+2.  include header, expand macro (.i, .ii) -> compilation step 2:  compiler (gcc, g++, clang)
+
+3.  assembly code (.s) -> assembly step 3:  assembler (as)
+
+4.  machine code (.o, .obj) -> linking step 4:  linker (ld)
+
+5.  static library (.a, .lib) -> dynamic linking step 5:  dynamic linker (ld)
+
+6.  executable machine code (.exe, .out)
+
 ##  how to compile a program
+
+-  depending on the os enviroment, platform, tool
+-  a very simplified approach on a linux enviromenyt
+
+`$  gcc -c myprogram.exe myprogram.c`
+
+-  `myprogram.exe` is now an executable program,  note that the `.exe` extension are not common in a linux enviroment
+-  an excellent compilation manager on linux is `make`
+-  version management tools (e.g. `git`) and services (github) are essential for software development
+
 ##  compilation and interpreters: a mixture
+
+-  intrepreter implements a virtual machine
+-  java for portability
+
 ##  summary
+
+-  an interpreter produces a result from a program
+-  a compiler produces a program in assembly language
+    -  the assembler of architecture then turns the resulting program into binary code
+    -  assembly language variaes for each individual computer depending upon its architecture
+
+
+
+
+
+
+
+
+
+
+
+
