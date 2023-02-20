@@ -6,7 +6,7 @@ jan 24 2023
 
 **contents**
 
-1.  [software's life cycle](#software's-life-cycle)
+1.  [software's life cycle](#softwares-life-cycle)
 2.  [development life cycle](#development-life-cycle)
 3.  [major development activities](#major-development-activities)
 4.  [a program's maintenance life cycle](#a-program's-maintenance-life-cycle)
@@ -136,6 +136,7 @@ Unix Executable File
 
 -  user enters `hello-pgm.exe`; each character is read from the keyboard, stored into a register, then stored into memory, the system will look for the program to execute
 
+<img width="549" alt="graph" src="https://user-images.githubusercontent.com/65584733/220176824-abe7deab-4450-47e1-b6f8-5abb90711eb6.png">
 
 
 ## the program output displayed
