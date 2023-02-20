@@ -116,4 +116,27 @@ Unix Executable File
 
 ## a simplified compilation process
 
+-  the preprocessor (cpp) handles directives such as `#include` (e.g. serverts `stdio.h` into the program)
 
+-  the compiler (cc1) translates to assembler code
+
+-  the assembler (as) translates into machine instructions
+
+-  the linker (ld) merges into other programs or library executables needed for the final functionality
+
+## running the executable object code
+
+-  to run at command line, we enter `unix> hello-pgm.exe`
+
+-  we will get the following output `hello, world`
+
+-  how does this happen inside our computer system?
+
+## how the "running" happens
+
+-  user enters `hello-pgm.exe`; each character is read from the keyboard, stored into a register, then stored into memory, the system will look for the program to execute
+
+
+
+## the program output displayed
+## summary
