@@ -474,15 +474,3 @@ int main(int argc, char **argv) {
 - references [lewis girod, cens systems lab](http://www.cens.ioc.ee/projects/courses/programming/lectures/lecture1.pdf)
 
 ## exercises
-
-1.  describe the behavior of the following program
-
-```c
-#include <stdio.h>
-
-int main() {
-    
-    int n;
-    
-    for (n = 7; n != 0; n--) {
-        printf("%d\n"`
