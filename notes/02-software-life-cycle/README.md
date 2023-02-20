@@ -138,6 +138,20 @@ Unix Executable File
 
 <img width="549" alt="graph" src="https://user-images.githubusercontent.com/65584733/220176824-abe7deab-4450-47e1-b6f8-5abb90711eb6.png">
 
-
 ## the program output displayed
+
+- once the program instructions are executed, the results (output) are moved from the register to the display device
+
 ## summary
+
+-  it's important that we understand a program's various life cycles
+
+-  we very briefly looked at three life cycles
+
+-  development (focus of the course)
+
+-  maintenance
+
+-  internal (in a computer system)
+
+-  it is important to note that many individuals, processes, and computer components are involved
