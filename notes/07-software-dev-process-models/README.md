@@ -119,12 +119,7 @@
 -  incremental development:  starts with small functionality, and adds new functionality with each new release
 -  iterative development:  starts with full system (but very minimal detail), then enhances the functionality of each software component with each new iteration
 
-
-
-
-
-
-
+![monalisa](https://user-images.githubusercontent.com/65584733/220461187-95ab9542-8810-456e-91d3-3fda2ee5a2e5.jpg)
 
 
 
