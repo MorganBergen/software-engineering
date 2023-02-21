@@ -121,12 +121,7 @@
 
 ![monalisa](https://user-images.githubusercontent.com/65584733/220461187-95ab9542-8810-456e-91d3-3fda2ee5a2e5.jpg)
 
-
-
-
-
-
-
+## phased development:  increments
 
 
 
