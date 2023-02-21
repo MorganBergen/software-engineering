@@ -8,6 +8,7 @@
 4.  [introduction to c](./notes/04-intro-c/README.md)
 5.  [arrays](./notes//05-arrays/README.md)
 6.  [introduction to c++](./notes/06-intro-c++/README.md)
+7.  [software development process models](./notes/07-software-dev-process-models/README.md)
 
 **repo directory tree**
 
@@ -15,7 +16,3 @@
 2.  [lab02](./src/lab02/)
 3.  [lab03](./src/lab03/EECS348_Lab3/)
 4.  [matching](./src/matching)
-
-**quizzes**
-
-
