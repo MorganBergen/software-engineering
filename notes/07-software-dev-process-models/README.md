@@ -44,7 +44,9 @@
     -  procedures and methods that define how to do the tasks and relationship between the tasks
 -  why a process
     -  provides guidelines and a structure
-    -  provides for consistency; minimizes redundanies
+    -  provides for consistency
+    -  minimizes redundanies
+    -  provides output to be as systematic as possible
 
 ## software development process
 
@@ -60,6 +62,7 @@
 -  requirements engineering
     -  requirements analysis
     -  system requirements
+    -  what are the requirements of a given software
 
 ## activities may be divided
 
@@ -73,12 +76,101 @@
 -  software development activities may be presented as a set of activities 
 -  design
     -  architectural design
-    -  data structure
+    -  data structure design
+    -  component design
+    -  interface design
 
 ## software development models
 
 -  describe the ordering of development activities and the expected artifacts (outcomes) from each activity
+
 -  many development models
     -  planned, disciplined ("linear") models (e.g. the waterfall model)
     -  prototyping model
     -  phased or incremental models (e.g. the unified process models)
+    -  spiral model
+    -  agile models (e.g. scrum model)
+
+## planned, disciplined models
+
+-  waterfall model (and its variations)
+-  one of the first process development models proposed
+-  works for well understood problems with minimal or no changes in the requirements
+-  each major phase is marked by milestones and devliveravles (artifacts)
+-  long wait before a final product
+
+```
+  requirements engineering
+  ↓
+  design
+  ↓
+  development
+  ↓
+  testing
+  ↓
+  deployment
+  ↓
+  maintenance
+```
+
+## incremental and iterative models
+
+-  also known as phased models
+-  incremental development:  starts with small functionality, and adds new functionality with each new release
+-  iterative development:  starts with full system (but very minimal detail), then enhances the functionality of each software component with each new iteration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
