@@ -119,24 +119,71 @@
 -  incremental development:  starts with small functionality, and adds new functionality with each new release
 -  iterative development:  starts with full system (but very minimal detail), then enhances the functionality of each software component with each new iteration
 
-![monalisa](https://user-images.githubusercontent.com/65584733/220461187-95ab9542-8810-456e-91d3-3fda2ee5a2e5.jpg)
+<img src="./monalisa.jpg" width="400">
 
 ## phased development:  increments
 
+<img src="./dev.png" width="400">
 
+## agile models
 
+-  iterative and incremental
+-  several well-known agile models -- scrum
 
+<img src="./scrum.png" width="400">
 
+## scrum software development
 
+-  scrum is a framework for developing, delivering, and sustaining complex products
 
+## scrum development methodology
 
+-  one of the most popular agile software development methodologies
+    -  other ones?
+-  important scrum concepts
+    -  team roles
+    -  product backlog
+    -  sprints
+    -  burndown charts
+    -  estimation techniques
+    -  sprint retrospectives
 
+## scrum roles
 
+-  product owner
+    -  makes sure the right features get into a new release (representing the users, customers)
+    -  set direction
+-  scrum master (project manager)
+    -  ensures the project progresses smoothly
+    -  team members have the tools to get their job done
+    -  sets up meetings, monitors, plans releases
+-  developers, testers, customers, ...
 
+## developing your cool new app
 
+-  you will get feature requests from a variety of stakeholders
+-  features are always from the perspective of the end users
+-  known as user stories:  "as a user (role) i want 2F authentication"
+-  the role could be a customer, an end user, and executive, ...
+-  backlog:  a collection of user stories (or wish lists)
 
+## release planning
 
+-  start with the user stories and create a release backlog
+-  prioritize and estimate time for each
+-  larger one may be broken down
 
+## how to estimate
+
+-  story points
+-  or in terms of hours, days, weeks, months, ...
+
+## sprints
+
+-  start with the release backlog
+-  may need several sprints to get the work done
+    -  sprints:  short duration milestones
+    -  2 - 30 days (depending on release cycles)
 
 
 
