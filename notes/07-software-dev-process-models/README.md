@@ -185,11 +185,39 @@
     -  sprints:  short duration milestones
     -  2 - 30 days (depending on release cycles)
 
+## sprint goal
 
+-  to get a subset of a release backlog to a ship-ready state
+-  at the end of each sprint, you have a fully tested product with all features
 
+## burndown chart
 
+-  use data comes from the release backlog to create a burnout chart
+-  a burndown chart is a visbility tool to ensure a project is progressing smoothly
+-  shows day-by-day amount of work to be done for a given sprint
 
+## daily scrum
 
+-  a daily tool to facilitate free flow of information between the team members
+-  stand up team member meetinsg
+-  team members list obstacles they are facing
+
+## sprint retrospective meeting
+
+-  at the end of each sprint, it is important to have a retrospective about what went right (to repeat) and what went bad (to avoid)
+
+## summary
+
+-  four major activities (very broad)
+-  requirements engineering
+-  design
+-  coding / implementation
+-  testing
+
+-  many software development models
+-  agile
+-  planned, disciplined approached (waterfall)
+-  incremental/iterative models
 
 
 
