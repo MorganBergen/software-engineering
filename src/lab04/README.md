@@ -5,6 +5,10 @@
 1.  [task 1](#task-1)
 2.  [task 2](#task-2)
 3.  [task 3](#task-3)
+-  [createMatrix()](#enter-4)
+-  [addMatrix()](#enter-5)
+-  [multiplyMatrix()](#enter-6)
+-  [transposeMatrix()](#enter-7)
 
 ## task 1
 
