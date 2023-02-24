@@ -171,12 +171,88 @@ Enter the value to replace: 99
 
 ## enter 6
 
-perform matrix multiplication.  see how other functions in the `matrix.cpp` and `matrix.h` are defined and code the `multiplyMatrix()` function.  use the `grid` matrix as the base matrix and store the multiplication result in `grid_temp`.  print the contents of the `grid_temp` once done.  refer to `addMatrix()` function.  
+perform matrix multiplication.  see how other functions in the `matrix.cpp` and `matrix.h` are defined and code the `multiplyMatrix()` function.  use the `grid` matrix as the base matrix and store the multiplication result in `grid_temp`.  print the contents of the `grid_temp` once done.  refer to `addMatrix()` function.  after implemented the following should be printed in the terminal.
 
+```zsh
+❯ ./prog
 
+1. Print the Matrix
+2. Perform an addition of the matrix with itself
+3. Get the maximum value in the matrix
+4. Find whether an element exists in the matrix
+5. Change an existing element in the matrix
+6. Perform matrix multiplication
+7. Transpose of a matrix
+Which operations would you like to perform on the matrix: 6
+90	100	110	120
+202	228	254	280
+314	356	398	440
+426	484	542	600
+```
+**implementation of multiplyMatrix**
 
+```cpp
+void matrix::multiplyMatrix(){
+	//Hint: May want to store the new result in grid_temp and print that matrix
 
+	for(int i = 0; i < rows; i++){
+		for(int j = 0; j < cols; j++){
+            for (int k = 0; k < cols; k++) {
+                grid_temp[i][j] += grid[i][k]*grid[k][j];
+            }
+		}
+	}
 
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < cols; j++){
+	        std::cout << grid_temp[i][j] << "\t";
+        }
+	    std::cout << "\n";
+    }
+
+	return;
+}
+```
+
+## enter 7
+
+perform transpose of the matrix.  see how other functions in the `matrix.cpp` and `matrix.h` are defined and code the `transposeMatrix()` function.  use the `grid` matrix as the base matrix and store the transpose result in `grid_temp`.  print the contents of the `grid_temp` once done.  refer to `addMatrix()` function.  after implemented the following should be printed in the terminal.
+
+```zsh
+❯ ./prog
+
+1. Print the Matrix
+2. Perform an addition of the matrix with itself
+3. Get the maximum value in the matrix
+4. Find whether an element exists in the matrix
+5. Change an existing element in the matrix
+6. Perform matrix multiplication
+7. Transpose of a matrix
+Which operations would you like to perform on the matrix: 7
+1	5	9	13
+2	6	10	14
+3	7	11	15
+4	8	12	16
+```
+
+```cpp
+void matrix::transposeMatrix() {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            grid_temp[i][j] = grid[j][i];
+        }
+    }
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            std::cout << grid_temp[i][j] << "\t";
+        }
+        std::cout << std::endl;
+    }
+
+	return;
+}
+```
 
 
 

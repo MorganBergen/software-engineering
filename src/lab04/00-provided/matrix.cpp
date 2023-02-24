@@ -87,8 +87,6 @@ void matrix::changeElement(int r, int c, int no){
 	return;
 }
 void matrix::multiplyMatrix(){ 
-	//Hint: May want to store the new result in grid_temp and print that matrix
-
 	for(int i = 0; i < rows; i++){
 		for(int j = 0; j < cols; j++){
             for (int k = 0; k < cols; k++) {
@@ -117,8 +115,6 @@ void matrix::multiplyMatrix(){
 */
 
 void matrix::transposeMatrix() {
-	//TO DO
-	//Hint: May want to store the new results in grid_temp and print that matrix
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             grid_temp[i][j] = grid[j][i];
