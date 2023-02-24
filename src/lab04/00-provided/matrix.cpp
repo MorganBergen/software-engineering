@@ -37,16 +37,16 @@ void matrix::addMatrix(){
 			grid_temp[i][j] = grid[i][j] + grid[i][j];
 		}
 	}
-        for(int i = 0; i<rows; i++){
-                for(int j = 0; j<cols; j++){
-			std::cout << grid_temp[i][j]<<"\t";
-                }
-		std::cout << "\n";
+    
+    for(int i = 0; i<rows; i++){
+        for(int j = 0; j<cols; j++){
+	        std::cout << grid_temp[i][j]<<"\t";
         }
+	    std::cout << "\n";
+    }
 }
 
 double matrix::getMax(){
-	//TO DO
 	double max_element = 0;
 
     for (int i = 0; i < rows; i++) {
@@ -61,7 +61,6 @@ double matrix::getMax(){
 }
 
 bool matrix::findElement(int no){
-	//TO DO
     bool found = false;
     
     for (int i = 0; i < rows; i++) {
@@ -82,12 +81,29 @@ bool matrix::findElement(int no){
 }
 
 void matrix::changeElement(int r, int c, int no){
-	//TO DO
+
+    grid[r][c] = no;
+
 	return;
 }
 void matrix::multiplyMatrix(){
 	//TO DO
 	//Hint: May want to store the new result in grid_temp and print that matrix
+
+	for(int i = 0; i < rows; i++){
+		for(int j = 0; j < cols; j++){
+			grid_temp[i][j] = grid[i][j]*grid[i][j];
+		}
+	}
+    
+    for(int i = 0; i<rows; i++){
+        for(int j = 0; j<cols; j++){
+	        std::cout << grid_temp[i][j]<<"\t";
+        }
+	    std::cout << "\n";
+    }
+
+
 	return;
 }
 
