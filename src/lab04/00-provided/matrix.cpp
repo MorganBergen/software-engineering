@@ -101,9 +101,8 @@ void matrix::multiplyMatrix(){
         for(int j = 0; j < cols; j++){
 	        std::cout << grid_temp[i][j] << "\t";
         }
-	    std::cout << "\n";
+        std::cout << std::endl;
     }
-
 
 	return;
 }
@@ -120,6 +119,19 @@ void matrix::multiplyMatrix(){
 void matrix::transposeMatrix() {
 	//TO DO
 	//Hint: May want to store the new results in grid_temp and print that matrix
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            grid_temp[i][j] = grid[j][i];
+        }
+    }
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            std::cout << grid_temp[i][j] << "\t";
+        }
+        std::cout << std::endl;
+    }
+
 	return;
 }
 
