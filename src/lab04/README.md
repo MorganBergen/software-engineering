@@ -144,7 +144,34 @@ bool matrix::findElement(int no){
 
 ## enter 5
 
-change the elemnet in matrix
+change the elemnet in matrix, this will ask the user to provide a **vald** row and column number of an element in the matrix and replace it with the provided number.  see how other functions in the `matrix.cpp` and `matrix.h` are defined and code the `changeElement(int r, int c, int no)` function.  after implemented the following should be printed in the terminal.  
+
+```cpp
+❯ ./prog
+
+1. Print the Matrix
+2. Perform an addition of the matrix with itself
+3. Get the maximum value in the matrix
+4. Find whether an element exists in the matrix
+5. Change an existing element in the matrix
+6. Perform matrix multiplication
+7. Transpose of a matrix
+Which operations would you like to perform on the matrix: 5
+
+Enter the row of the element to change: 1
+
+Enter the column of the element to change: 0
+
+Enter the value to replace: 99
+1	2	3	4
+99	6	7	8
+9	10	11	12
+13	14	15	16
+```
+
+## enter 6
+
+perform matrix multiplication.  see how other functions in the `matrix.cpp` and `matrix.h` are defined and code the `multiplyMatrix()` function.  use the `grid` matrix as the base matrix and store the multiplication result in `grid_temp`.  print the contents of the `grid_temp` once done.  refer to `addMatrix()` function.  
 
 
 
