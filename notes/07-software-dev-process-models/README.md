@@ -128,7 +128,7 @@
 ## agile models
 
 -  iterative and incremental
--  several well-known agile models -- scrum
+-  several well-known agile models -- scrum, extreme programming (XP), crystal, dynamic systems development method (DSDM), feature driven development (FDD), lean software development (LSD), and test driven development (TDD)
 
 <img src="./scrum.png" width="400">
 
