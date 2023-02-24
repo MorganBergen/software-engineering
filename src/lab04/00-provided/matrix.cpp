@@ -86,19 +86,20 @@ void matrix::changeElement(int r, int c, int no){
 
 	return;
 }
-void matrix::multiplyMatrix(){
-	//TO DO
+void matrix::multiplyMatrix(){ 
 	//Hint: May want to store the new result in grid_temp and print that matrix
 
 	for(int i = 0; i < rows; i++){
 		for(int j = 0; j < cols; j++){
-			grid_temp[i][j] = grid[i][j]*grid[i][j];
+            for (int k = 0; k < cols; k++) {
+                grid_temp[i][j] += grid[i][k]*grid[k][j]; 
+            }
 		}
 	}
     
-    for(int i = 0; i<rows; i++){
-        for(int j = 0; j<cols; j++){
-	        std::cout << grid_temp[i][j]<<"\t";
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < cols; j++){
+	        std::cout << grid_temp[i][j] << "\t";
         }
 	    std::cout << "\n";
     }
@@ -107,11 +108,21 @@ void matrix::multiplyMatrix(){
 	return;
 }
 
-void matrix::transposeMatrix(){
+
+/*
+   90  100 110 120
+   202 228 254 280
+   314 356 398 440
+   426 484 542 600
+
+*/
+
+void matrix::transposeMatrix() {
 	//TO DO
 	//Hint: May want to store the new results in grid_temp and print that matrix
 	return;
 }
+
 matrix::~matrix(){
         for(int i = 0; i<rows; i++){
                 delete[] grid[i];
