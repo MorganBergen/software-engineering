@@ -9,6 +9,8 @@
 5.  [arrays](./notes//05-arrays/README.md)
 6.  [introduction to c++](./notes/06-intro-c++/README.md)
 7.  [software development process models](./notes/07-software-dev-process-models/README.md)
+8.  [requirements engineering](./notes/09-requirements-engineering)
+9.  [use case modeling](./notes/10-case-modeling)
 
 **repo directory tree**
 
