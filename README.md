@@ -19,3 +19,4 @@
 3.  [lab03](./src/lab03/EECS348_Lab3/)
 4.  [matching](./src/matching)
 5.  [lab04](./src/lab04/)
+6.  [lab05](./src/lab05/)
