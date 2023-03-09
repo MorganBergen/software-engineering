@@ -2,6 +2,9 @@
 
 **contents**
 
+all has to be lowercase
+spaces are -
+
 1.  [requirements engineering](#requirements-engineering)
 2.  [what is a requirement](#what-is-a-requirement)
 3.  [where do requirements come from](#where-do-requirements-come-from)
