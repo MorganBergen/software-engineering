@@ -20,3 +20,4 @@
 4.  [matching](./src/matching)
 5.  [lab04](./src/lab04/)
 6.  [lab05](./src/lab05/)
+7.  [lab06](./src/lab06)
