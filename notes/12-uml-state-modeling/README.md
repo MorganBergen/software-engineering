@@ -65,6 +65,12 @@ note on why we have systems requirement engineering:  ensure that this [ariane 5
 
 <img src="./example-2.png" width="500px"> <br>
 
+## for the mathematically intrigued
+
+-  an automata is a 5 tuple $
+
+
+
 
 
 
