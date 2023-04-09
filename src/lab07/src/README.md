@@ -42,6 +42,46 @@ wget people.eecs.ku.edu/~m358b583/grant_permission.sh
 bash gran_permission.sh
 ```
 
+```bash
+m358b583@cycle3:~/public_html$ wget people.eecs.ku.edu/~l367r860/index.html
+wget people.eecs.ku.edu/~l367r860/grant_permission.sh
+bash grant_permission.sh
+--2023-04-09 13:34:00--  http://people.eecs.ku.edu/~l367r860/index.html
+Resolving people.eecs.ku.edu (people.eecs.ku.edu)... 129.237.87.16
+Connecting to people.eecs.ku.edu (people.eecs.ku.edu)|129.237.87.16|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://people.eecs.ku.edu/~l367r860/index.html [following]
+--2023-04-09 13:34:00--  https://people.eecs.ku.edu/~l367r860/index.html
+Connecting to people.eecs.ku.edu (people.eecs.ku.edu)|129.237.87.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 422 [text/html]
+Saving to: ‘index.html’
+
+index.html                              100%[============================================================================>]     422  --.-KB/s    in 0s
+
+2023-04-09 13:34:00 (189 MB/s) - ‘index.html’ saved [422/422]
+
+--2023-04-09 13:34:00--  http://people.eecs.ku.edu/~l367r860/grant_permission.sh
+Resolving people.eecs.ku.edu (people.eecs.ku.edu)... 129.237.87.16
+Connecting to people.eecs.ku.edu (people.eecs.ku.edu)|129.237.87.16|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://people.eecs.ku.edu/~l367r860/grant_permission.sh [following]
+--2023-04-09 13:34:00--  https://people.eecs.ku.edu/~l367r860/grant_permission.sh
+Connecting to people.eecs.ku.edu (people.eecs.ku.edu)|129.237.87.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 147 [application/x-sh]
+Saving to: ‘grant_permission.sh’
+
+grant_permission.sh                     100%[============================================================================>]     147  --.-KB/s    in 0s
+
+2023-04-09 13:34:01 (63.1 MB/s) - ‘grant_permission.sh’ saved [147/147]
+
+m358b583@cycle3:~/public_html$ ls
+cgi-bin  grant_permission.sh  index.html
+m358b583@cycle3:~/public_html$
+```
+
+
 -  after that you will open your browser and visit the following link you made and make sure to change your ku network id to m358b583
 -  you will finish the first step if you can visit the following page
 -  when creating a new file, you must run the command `bash grant_permission.sh` again.
@@ -67,13 +107,41 @@ bash gran_permission.sh
     -  in sort the script just set permission to 644, so others can access your file
     -  you will find out that even if you don't run the script, you can still access your site because the default permission of a new file is 644, so the script is to make sure the permission is correct
 
--  what do the three commands mean **chat gpt version**
+-  what do the three commands mean?  **chat gpt version**
     -  `wget people.eecs.ku.edu/~m358b583/index.html`:  this command uses the `wget` command line utility to download the `index.html` file from the url `people.eecs.ku.edu/~m358b583`.  the `wget` utility is commonly used for downloading files from the internet
-    - 
+    -  `wget people.eecs.ku.edu/~m358b583/grant_permission.sh`:  this command uses `wget` to download the `grant_permission.sh` shell script from the same url
+    -  `bash grant_permission.sh`:  this command executes the `grant_permission.sh` script using the `bash` shell.  the script is intended to modify the file permissions of certain files or directories, allowing the user to perform certain operations that would otherwise be restricted.
 
+###  after you set up your enviroment you should have the following
 
+<img src="index-prev.png" width="500px" align="right">
+
+```bash
+m358b583@cycle3:~/public_html$ ls -al
+total 20
+drwxr-xr-x  3 m358b583         48 4096 Apr  9 13:40 .
+drwxr-x--x 28 m358b583 m358b583_g 4096 Apr  9 13:40 ..
+drwxr-xr-x  2 m358b583         48 4096 Aug 23  2017 cgi-bin
+-rw-r--r--  1 m358b583 m358b583_g  147 Apr  9 13:40 grant_permission.sh
+-rw-r--r--  1 m358b583 m358b583_g  422 Apr  4 11:49 index.html
+m358b583@cycle3:~/public_html$
+```
+
+finally, you may find the sit doesn't change after changing your files.  the server needs some time to update and you need to refresh your browser.
 
 ##  practice one:  html eecs profiles
+
+-  make a profile page that is styled with css
+-  have fun with this and include the following
+    -  name
+    -  a photo
+    -  contact info
+    -  showcase anything good for your professional career
+    -  courses
+    -  projects
+    -  work experience
+    -  one link 
+    -  one video
 
 ##  practice two:  css font control
 
@@ -82,3 +150,29 @@ bash gran_permission.sh
 ##  practice four:  php multiplication table
 
 ##  publish your exercises
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
