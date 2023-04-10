@@ -2,6 +2,11 @@
 
 [view lab here](./src)
 
+1.  [profile](./src/1-practice/index.html)
+2.  [css font control](./src/2-practice/index.html)
+3.  [javascript password verification](./src/3-practice/index.html)
+4.  [php multiplication table](./src/4-practice/index.php)
+
 ###  contents
 
 1.  [what is html](#what-is-html)
