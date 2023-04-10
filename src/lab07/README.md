@@ -2,10 +2,10 @@
 
 [view lab here](./src)
 
-1.  [profile](./src/1-practice/index.html)
-2.  [css font control](./src/2-practice/index.html)
-3.  [javascript password verification](./src/3-practice/index.html)
-4.  [php multiplication table](./src/4-practice/index.php)
+1.  [profile](https://people.eecs.ku.edu/~m358b583/src/1-practice/index.html) - [code](./src/1-practice/index.html)
+2.  [css font control](https://people.eecs.ku.edu/~m358b583/src/2-practice/index.html) - [code](./src/2-practice/index.html)
+3.  [javascript password verification](https://people.eecs.ku.edu/~m358b583/src/3-practice/index.html) - [code](./src/3-practice/index.html)
+4.  [php multiplication table](https://people.eecs.ku.edu/~m358b583/src/4-practice/index.php) - [code](./src/4-practice/index.php)
 
 ###  contents
 
