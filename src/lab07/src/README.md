@@ -81,7 +81,6 @@ cgi-bin  grant_permission.sh  index.html
 m358b583@cycle3:~/public_html$
 ```
 
-
 -  after that you will open your browser and visit the following link you made and make sure to change your ku network id to m358b583
 -  you will finish the first step if you can visit the following page
 -  when creating a new file, you must run the command `bash grant_permission.sh` again.
@@ -151,32 +150,17 @@ finally, you may find the sit doesn't change after changing your files.  the ser
 
 ##  practice three:  javascript password verification
 
+-  create a javascript program that allows the user to enter a password two times to verify them
+-  if the password is not at least eight characters long or if two passwords are different, alter the user
+-  otherwise, tell the user that the two passwords are matching
+
 ##  practice four:  php multiplication table
+
+-  create a php program that receives a number and displays a multiplication table from 1 to the number.  
+-  you also need to print the row and column indexes in the table
 
 ##  publish your exercises
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-  make sure that you publish your practices on github
+-  at the same time make sure the TAs can access your eecs people link
 

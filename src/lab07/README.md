@@ -1,5 +1,7 @@
 #  web programming in html, css, js, php
 
+[view lab here](./src)
+
 ###  contents
 
 1.  [what is html](#what-is-html)
@@ -382,57 +384,4 @@ for (initialization; condition; update) {
 
 -  use the existing framework rather than html files yourself 
 -  markdown + gitHub + hugo/hexo/jekyll + (netlify)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

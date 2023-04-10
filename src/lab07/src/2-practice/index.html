@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Control Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget odio purus. Ut aliquam tellus vitae eros cursus, ut pretium turpis imperdiet.</p>
+        <label for="text-color">Text Color (RGB):</label>
+        <input type="color" id="text-color">
+        <label for="border-color">Border Color (RGB):</label>
+        <input type="color" id="border-color">
+        <label for="border-width">Border Width (px):</label>
+        <input type="number" id="border-width" min="0" value="1">
+    </div>
+    <script>
+        const textColorInput = document.getElementById('text-color');
+        const borderColorInput = document.getElementById('border-color');
+        const borderWidthInput = document.getElementById('border-width');
+        const textElement = document.querySelector('.text');
+
+        textColorInput.addEventListener('input', () => {
+            textElement.style.color = textColorInput.value;
+        });
+
+        borderColorInput.addEventListener('input', () => {
+            textElement.style.borderColor = borderColorInput.value;
+        });
+
+        borderWidthInput.addEventListener('input', () => {
+            textElement.style.borderWidth = `${borderWidthInput.value}px`;
+            textElement.style.borderStyle = 'solid';
+        });
+    </script>
+</body>
+</html>
+
