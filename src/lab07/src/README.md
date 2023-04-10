@@ -145,6 +145,10 @@ finally, you may find the sit doesn't change after changing your files.  the ser
 
 ##  practice two:  css font control
 
+-  create a web page that has a parahraph with some dummy text. 
+-  near the paragraph have a field to accept the following values:  red/green/blue values for the paragraph and red/green/blue values for the border
+-  you also need to control the width of the border
+
 ##  practice three:  javascript password verification
 
 ##  practice four:  php multiplication table
