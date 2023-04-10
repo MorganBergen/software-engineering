@@ -16,7 +16,7 @@
 12. [uml state modeling](./notes/12-uml-state-modeling)
 13. [intro to finite state machines](./notes/13-intro-fsm)
 14. [regular expressions](./notes/14-regular-expressions)
-15. [15-design](./notes/15-design)
+15. [design](./notes/15-design)
 
 **source code**
 
