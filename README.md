@@ -20,11 +20,13 @@
 
 **source code**
 
-1.  [lab01](./src/lab01/)
-2.  [lab02](./src/lab02/)
-3.  [lab03](./src/lab03/EECS348_Lab3/)
-4.  [matching](./src/matching)
-5.  [lab04](./src/lab04/)
-6.  [lab05](./src/lab05/)
-7.  [lab06](./src/lab06)
-8.  [lab07](./src/lab07)
+1.  [git](./src/lab01/)
+2.  [shell programming and make](./src/lab02/)
+3.  [introduction to compiled programming, eclipse ide](./src/lab03/EECS348_Lab3/)
+4.  [matching](./src/matching/)
+5.  [matrix operations](./src/lab04/)
+6.  [uml use case modeling](./src/lab05/)
+7.  [uml class diagram](./src/lab06/)
+8.  [web programming in html, css, js, php](./src/lab07/)
+9.  [databases with sql programming](./src/lab08/)
+10. [container programming using docker](./src/lab09/)

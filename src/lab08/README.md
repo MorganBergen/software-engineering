@@ -291,6 +291,13 @@ MariaDB [m358b583]> select * from Enrollment;
 ##  queries
 
 1.  retrieve students with gpa higher than 3.7, display the student first name, last name, city and gpa
+
+```sql
+SELECT StdFirstName, StdLastName, StdCity, StdGPA
+FROM Student
+WHERE StdGPA > 3.7;
+```
+
 2.  display student first name, last name, and gpa of students in descending order of gpa
 3.  retrieve all the information about senior-level IS courses
 4.  list offerings without an instructor in summer.  display the offering and course number
@@ -333,5 +340,4 @@ MariaDB [m358b583]> SELECT StdFirstName, StdLastName, StdGPA
 | LUKE         | BRAZZI      |   2.20 |
 +--------------+-------------+--------+
 11 rows in set (0.001 sec)
-
 ```
