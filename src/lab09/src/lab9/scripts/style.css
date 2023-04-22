@@ -1,0 +1,23 @@
+p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	/*display: table;*/
+	font: 9px sans-serif;
+}
+
+
+#clock {
+    align: center;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 70px;
+    padding: 135px;
+    color: #fff;
+
+    background: linear-gradient(330deg, #fff200 0%, #ff0000 25%, #ff0077 50%, #ff7b00 75%, #ff0000 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+

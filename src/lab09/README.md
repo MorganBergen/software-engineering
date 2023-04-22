@@ -19,4 +19,3 @@ task 1 - dockerize a web application [15 points]
 task 2 - dockerize a C program [10 points]
 
 task 3 - publish to github and docker dub [5 points]
-
