@@ -2,9 +2,6 @@
 
 ###  contents
 
-1.  [objective](#objective)
-2.  [deliverable](#deliverable)
-3.  [evaluation](#evaluation)
 4.  [implementation](#implementation)
 5.  [docker](#docker)
 6.  [create a web app](#create-a-web-app)
@@ -20,22 +17,9 @@
 16. [run the docker container](#run-the-docker-container)
 17. [push the docker image to a registry](#push-the-docker-image-to-a-registry)
 18. [submit the docker link](#submit-the-docker-link)
-
-###  objective
-
-learn the basics of docker programming
-
-###  deliverable
-
--  a link to your github repository
--  another link to your Docker Hub repository.
-
-###  evaluation
-
--  docker installation [10 points]
--  task 1 - dockerize a web application [15 points]
--  task 2 - dockerize a C program [10 points]
--  task 3 - publish to github and docker dub [5 points]
+1.  [objective](#objective)
+2.  [deliverable](#deliverable)
+3.  [evaluation](#evaluation)
 
 #  implementation
 
@@ -264,12 +248,94 @@ provide a c program and save it in a directory
 
 create a file named Dockerfile in the same directory
 
+```dockerfile
+❯ cat Dockerfile
+#  set the base image to use
+FROM gcc:latest
+
+#  copy the c program into the container
+COPY main.c
+
+#  compile the c program
+RUN gcc -o main main.c
+
+#  set the command to run when the container starts
+CMD ["./main"]
+```
+
 ## build the docker image
+
+open a terminal and run the following command 
+
+`docker build -t csrc`
+
+```
+❯ docker build -t cprogram .
+[+] Building 2.0s (9/9) FINISHED
+ => [internal] load build definition from Dockerfile                                                0.0s
+ => => transferring dockerfile: 348B                                                                0.0s
+ => [internal] load .dockerignore                                                                   0.0s
+ => => transferring context: 2B                                                                     0.0s
+ => [internal] load metadata for docker.io/library/gcc:latest                                       1.6s
+ => [internal] load build context                                                                   0.0s
+ => => transferring context: 1.64kB                                                                 0.0s
+ => CACHED [1/4] FROM docker.io/library/gcc:latest@sha256:3278f73b4320cb6f5f9c845c94bd7d9ac04f6863  0.0s
+ => [2/4] COPY main.c /app/main.c                                                                   0.0s
+ => [3/4] WORKDIR /app                                                                              0.0s
+ => [4/4] RUN gcc -o main main.c                                                                    0.2s
+ => exporting to image                                                                              0.0s
+ => => exporting layers                                                                             0.0s
+ => => writing image sha256:c2d4c812c15663211ed5705e6ae9d6ce0f9a2d826d4d926452cb82eaa0a57e34        0.0s
+ => => naming to docker.io/library/cprogram                                                         0.0s
+
+```
 
 ## run the docker container
 
+`docker run it cprogram`
+
+```zsh
+❯ docker ps -a
+CONTAINER ID   IMAGE                          COMMAND                  CREATED             STATUS                     PORTS     NAMES
+bc446714e6ba   cprogram                       "./main"                 13 seconds ago      Exited (0) 8 seconds ago             blissful_wescoff
+7904787fcc61   morganbergen/src_docker:view   "docker-php-entrypoi…"   About an hour ago   Created                              keen_ellis
+```
+
 ## push the docker image to a registry
+
+```zsh
+docker login
+docker tag cprogram morganbergen/cprogram:view
+docker push morganbergen/cprogram:view
+docker logout
+```
+
+##  `docker ps -a`
+
+```zsh
+❯ docker ps -a
+CONTAINER ID   IMAGE                          COMMAND                  CREATED             STATUS                     PORTS     NAMES
+bc446714e6ba   cprogram                       "./main"                 6 minutes ago       Exited (0) 6 minutes ago             blissful_wescoff
+7904787fcc61   morganbergen/src_docker:view   "docker-php-entrypoi…"   About an hour ago   Created                              keen_ellis
+```
 
 ## submit the docker link
 
+-  docker link:  [https://hub.docker.com/u/morganbergen](https://hub.docker.com/u/morganbergen)
+-  github link:  [https://github.com/MorganBergen/software-engineering/tree/master/src/lab09](https://github.com/MorganBergen/software-engineering/tree/master/src/lab09)
 
+###  objective
+
+learn the basics of docker programming
+
+###  deliverable
+
+-  a link to your github repository
+-  another link to your Docker Hub repository.
+
+###  evaluation
+
+-  docker installation [10 points]
+-  task 1 - dockerize a web application [15 points]
+-  task 2 - dockerize a C program [10 points]
+-  task 3 - publish to github and docker dub [5 points]
