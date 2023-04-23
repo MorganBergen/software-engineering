@@ -324,6 +324,8 @@ bc446714e6ba   cprogram                       "./main"                 6 minutes
 -  docker link:  [https://hub.docker.com/u/morganbergen](https://hub.docker.com/u/morganbergen)
 -  github link:  [https://github.com/MorganBergen/software-engineering/tree/master/src/lab09](https://github.com/MorganBergen/software-engineering/tree/master/src/lab09)
 
+<img src=./assets/"docker.png">
+
 ###  objective
 
 learn the basics of docker programming
