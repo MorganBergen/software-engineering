@@ -1,5 +1,9 @@
 #  lab09 container programming using docker
 
+dockerizing the following file!
+
+<video src="./assets/donut.mov">
+
 ###  contents
 
 4.  [implementation](#implementation)
