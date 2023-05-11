@@ -20,7 +20,8 @@ its overall organization, how the software is decomposed into components, the se
 </details>
 
 <details>
-<summary>5.  define a component</summary>
+<summary>5.  what is decomposability</summary>
+a design concept that decomposes complex systems into subsystems.
 </details>
 
 <details>
@@ -29,20 +30,23 @@ a collection of one or more services that may be used by other components.
 </details>
 
 <details>
-<summary>7.  is it true or false that the design stage of a software architecture only includes designing the component interface and leaves the implementation of the interface to a different process</summary>
+<summary>7.  is it true or false that the design stage of a software architecture only includes designing the component interface and leaves the implementation of the interface to a different process?</summary>
 true
 </details>
 
 <details>
-<summary>what is a domain specific software architecture</summary>
+<summary>8.  what is composability</summary>
+a design concept.  build software elements so that they may be freely combined with others to produce new software.
 </details>
 
 <details>
-<summary></summary>
+<summary>9.  what is the small interfaces principle</summary>
+if two modules communicate, they exchange as little information as possible.
 </details>
 
 <details>
-<summary></summary>
+<summary>10. what is sequential cohesion?</summary>
+
 </details>
 
 <details>
