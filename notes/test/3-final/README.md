@@ -44,19 +44,3 @@ a design concept.  build software elements so that they may be freely combined w
 if two modules communicate, they exchange as little information as possible.
 </details>
 
-<details>
-<summary>10. what is sequential cohesion?</summary>
-
-</details>
-
-<details>
-<summary></summary>
-</details>
-
-<details>
-<summary></summary>
-</details>
-
-<details>
-<summary></summary>
-</details>
